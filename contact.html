@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>portfolio</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-widht">
+            <div class="logo"><a href="#">LAIBA</a></div>
+            <ul class="menu">
+                <li><a href="#portfolio.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-1">
+       
+       <div class="contact">  <h1>CONTACT ME</h1>I am available on almost every social media. You can message me, I will reply within 24 hours.
+         I can help you with Software Development, AI, React, Android, Cloud and Opensource Development.
+       </div>
+       <div class="contact-info">
+        <div class="item">
+          <i class="icon fa fa-home"></i>
+          Lahore, Punjab </div>
+        <div class="item">
+          <i class="icon fa fa-phone"></i>
+          +923076187195</div>
+        <div class="item">
+          <i class="icon fa fa-envelope"></i>
+          laibazafar131@gmail.com</div>
+       </div>
+    </section>
+</body>
+<footer class="foot">
+    <p>Made with ❤️ by <span>LAIBA</span></p>
+</footer> 
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .max-widht{
+            max-width: 100%;
+            padding: 0px 0px;
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            padding: 15px 40px;
+            background:rgb(14, 13, 13);
+        }
+        .navbar .max-widht{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo a{
+            font-size: 35px;
+            color: crimson;
+        }
+        .navbar .menu li {
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar .menu li a{
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 30px; 
+            transition: color 0.5 ease;
+        }
+        .navbar .menu li a:hover{
+            color: crimson;
+    
+        }
+        .navbar .menu li a.active{
+            color: crimson;
+        }
+        /*contact */
+
+        .container-1{
+            display: flex;
+            background-color: crimson;
+            width: 100%;
+            padding:130px ;
+            height: 90vh;
+        }
+        h1{
+            text-align:center;
+            padding: 20px;
+        }
+        .contact{
+            text-align: left;
+            font-size: 25px;
+            color: black;
+            padding: 40px 20px ;
+            font-weight: 500px;
+        }
+        .contact-info{
+            padding: 120px 40px;
+            font-size: 25px;
+            
+        }
+        .item{
+            color: #322;
+            gap: 5px;
+        }
+        .icon{
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+           text-align: center;
+           color: #fff;
+           border-radius: 50%;
+           gap: 20px;
+        }
+        .foot{
+            background-color: black;
+        }
+        .foot p{ 
+
+            padding: 20px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+        .foot p span{
+            color: crimson;
+            
+        }

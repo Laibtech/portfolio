@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-widht">
+            <div class="logo"><a href="#">LAIBA</a></div>
+            <ul class="menu">
+                <li><a href="portfolio.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="active" href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section  class="container">
+        <div class="details">
+            <div class="education-img">
+                <img src="uni.png">
+            </div>
+            <div class="education">
+                <p>Currently, doing BS(INFORMATION TECHNOLOGY) From <b>University of Education</b></p><br>
+                <h3>⚡ Currently, studying basic software engineering subjects like DS, Algorithms, DBMS,  AI etc.
+                <br>⚡ Apart from this, I have done courses on Deep Learning, Data Science and Full Stack Development.</h3>
+            </div>
+         </div>
+
+    </section>
+    
+</body>
+<footer class="foot">
+    <p>Made with ❤️ by <span>LAIBA</span></p>
+</footer> 
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .max-widht{
+            max-width: 100%;
+            padding: 0px 0px;
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            padding: 15px 40px;
+            background:rgb(14, 13, 13);
+        }
+        .navbar .max-widht{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo a{
+            font-size: 35px;
+            color: crimson;
+        }
+        .navbar .menu li {
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar .menu li a{
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 30px; 
+            transition: color 0.5 ease;
+        }
+        .navbar .menu li a:hover{
+            color: crimson;
+        }
+        .navbar .menu li a.active{
+            color: crimson;
+        }
+         .container{
+            background-color:rgb(0, 0, 0); 
+            width: 100%;
+            height: 90vh;
+            align-items: center;
+            padding: 15%;
+        }
+        .details .education{
+            padding-top: 40px;
+            color: rgb(253, 251, 251); 
+          
+        }
+    
+            
+        
+        .foot{
+            background-color: black;
+        }
+        .foot p{ 
+
+            padding: 20px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+        .foot p span{
+            color: crimson;
+            
+        }
