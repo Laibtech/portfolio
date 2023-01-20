@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <title>portfolio</title>
 </head>
-
 <body>
+
     <nav class="navbar">
         <div class="max-widht">
             <div class="logo"><a href="#">LAIBA</a></div>
@@ -18,120 +16,145 @@
                 <li><a href="portfolio.html">About Me</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="education.html">Education</a></li>
-                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a class="active"href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </div>
     </nav>
-    <div class="grid">
-        <h1>Grid Elements</h1>
-        <h1 class="heading">Projects</h1>
-        <div class="grid-container">
-          <div class="grid-item">Resume using Html,CSS</div>
-          <div class="grid-item">Portfolio</div>  
+    <section id="sm-banner" class="section-p1">
+        <div class=" banner-box1">
+            <img class="img" src="Joining post-Flash1.gif">
+         </div>
+        <div class="banner-box">
+         <h2>INTERNSHIP</h2>
+         <ul>
+            <li>I just joined <i>iTitans trainee S.T.E.P</i>.INSHALLAH, i will get more knowledge from this program and become a full stack developer.</li><br>
+        </ul>
         </div>
-    </div>
+      </section>
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+         <h2>Projects</h2>
+         <ul>
+            <li>Resume using html,CSS</li><br>
+            <li>Portfolio using html,CSS</li><br>
+            <li>Calculator using html,CSS,js</li><br>
+            <li>Five pages websiteusing html,CSS</li><br>
+            <li>Validation FORM  using html,CSS</li><br>
+        </ul>
+         
+        </div>
+     <div class=" banner-box1">
+        <img class="img" src="what.png">
+     </div>
+      </section>
+      
 </body>
 <footer class="foot">
     <p>Made with ❤️ by <span>LAIBA</span></p>
-</footer> 
+</footer>
     <style>
-        * {
-            margin: 0;
+        /*nav*/
+        *{
+            margin: 0 ;
             padding: 0;
             box-sizing: border-box;
             text-decoration: none;
         }
-        body{
-            background-color: rgb(90, 90, 90);
-        }
-
-        .max-widht {
+        .max-widht{
             max-width: 100%;
             padding: 0px 0px;
+    
         }
-
-        .navbar {
+        .navbar{
             position: fixed;
             width: 100%;
             padding: 15px 40px;
-            background: rgb(14, 13, 13);
+            background:rgb(14, 13, 13);
         }
-
-        .navbar .max-widht {
+        .navbar .max-widht{
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-
-        .navbar .logo a {
+        .navbar .logo a{
             font-size: 35px;
             color: crimson;
         }
-
         .navbar .menu li {
             list-style: none;
             display: inline-block;
         }
-
-        .navbar .menu li a {
+        .navbar .menu li a{
             color: aliceblue;
             font-size: 20px;
             font-weight: 500;
-            margin-left: 30px;
+            margin-left: 30px; 
             transition: color 0.5 ease;
         }
-
-        .navbar .menu li a:hover {
+        .navbar .menu li a:hover{
+            color: crimson;
+    
+        }
+        .navbar .menu li a.active{
             color: crimson;
         }
+        /*end*/    
+        #sm-banner{
+    display: flex;
+    justify-content: space-between;
+     background-image: linear-gradient(rgb(115, 3, 219), white);
+    width: 100%;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 580px;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    font-size: 40px;
+    padding: 20px;
+}
+.banner-box ul li{
+    font-size: 20px;
+    color: black;
+    align-content: flex-start;
 
-        .navbar .menu li a.active {
-            color: crimson;
-        }
-        .grid{
-            height: 90vh;
-            width: 100%;
-        }
-         .heading{
-            padding-top: 10%;
-            text-align: center;
-            font-size: 70px;
-       
-         }
-        .grid-container {
-            margin: 10%;
-            display: grid;
-            grid-template-columns: auto auto;
-            background-color: #aaaaaad5;
-            padding: 10px;
-            grid-gap:20px;
-            border-top-width: 10px;
-        }
-
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid crimson;
+}
+     .banner-box1{
             padding: 40px;
-            font-size: 30px;
-            text-align: center;
+          
+            
         }
+        .banner-box1 .img{
+            padding-top: 50px;
+            padding-right: 50px;
+            width: 500px;
+            height: 500px;
+            
+        }
+        .banner-box ul i{
+            color: rgb(115, 3, 219);
+            font-size: 30px;
+        }
+        /*foot start*/
         .foot{
             background-color: black;
         }
-        .foot p{ 
-
+        .foot p{
             padding: 20px;
             text-align: center;
             color: aliceblue;
             font-size: 20px;
-            font-family: Georgia;
+            font-family:  'Times New Roman';
         }
         .foot p span{
             color: crimson;
             
         }
-    </style>
-
-
-</html>
+       
